@@ -638,9 +638,6 @@ a {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    /* transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -703,12 +700,12 @@ a {
 .modal-clouse-bt:focus {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff;
+    /* fill: #ffffff; */
 }
 
-.clous-item:hover,
-.clous-item:focus {
-    fill: #ffffff;
+.modal-clouse-bt .clous-item:hover,
+.modal-clouse-bt .clous-item:focus {
+           fill: #ffffff;
 }
 
 /* button x end */
@@ -738,7 +735,7 @@ a {
 .modal-form-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: block;
