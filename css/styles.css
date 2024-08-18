@@ -679,21 +679,20 @@ a {
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
 
 .clous-item {
     fill: #2e2f42;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   }
 
 .modal-clouse-bt:hover,
 .modal-clouse-bt:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff
 }
 
 .clous-item:hover, 
